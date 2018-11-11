@@ -1,0 +1,10 @@
+package scientificCalculato;
+
+public interface CalculatorAdvancedOperationsInterface {
+	void sine();
+	void cosine();
+	void tangent();
+	void sqrt();
+	void x2();
+	void x3();
+}
