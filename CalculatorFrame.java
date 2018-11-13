@@ -189,6 +189,7 @@ public class CalculatorFrame extends JFrame {
 		textField.setBounds(15, 16, 493, 104);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
+		textField.addKeyListener(new SimpleKeyListener());
 		
 		// Frame.
 		frame.setResizable(false);
