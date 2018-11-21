@@ -191,6 +191,8 @@ public class CalculatorFrame extends JFrame {
 		textField.setColumns(10);
 		textField.addKeyListener(new SimpleKeyListener());
 		
+		textField.addKeyListener(new SimpleKeyListener()); //User can' t type character in text field
+		
 		// Frame.
 		frame.setResizable(false);
 		frame.getContentPane().setBackground(new Color(0, 255, 153));
