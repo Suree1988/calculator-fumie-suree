@@ -18,18 +18,18 @@ import javax.swing.UIManager;
  */
 public class CalculatorFrame extends JFrame {
 	private JFrame frame  			= new JFrame();
-	protected JTextField textField 	= new JTextField();
-	protected JButton buttDividion 	= new JButton("\u00F7");
+	protected JTextField textField 		= new JTextField();
+	protected JButton buttDividion 		= new JButton("\u00F7");
 	protected JButton buttPlus 		= new JButton("+");
 	protected JButton buttSub 		= new JButton("-");
-	protected JButton buttMulti 	= new JButton("x");
-	protected JButton buttPercent 	= new JButton("mod");
-	protected JButton buttResult 	= new JButton("=");
-	protected JButton buttPoint 	= new JButton(".");
+	protected JButton buttMulti 		= new JButton("x");
+	protected JButton buttPercent 		= new JButton("mod");
+	protected JButton buttResult 		= new JButton("=");
+	protected JButton buttPoint 		= new JButton(".");
 	protected JButton buttAC 		= new JButton("AC");
 	protected JButton buttSin 		= new JButton("sin");
 	protected JButton buttX3 		= new JButton("x³");
-	protected JButton buttX2 			= new JButton("x²");
+	protected JButton buttX2 		= new JButton("x²");
 	protected JButton buttCos 		= new JButton("cos");
 	protected JButton buttTan 		= new JButton("tan");
 	protected JButton buttRoot 		= new JButton("\u221A");
