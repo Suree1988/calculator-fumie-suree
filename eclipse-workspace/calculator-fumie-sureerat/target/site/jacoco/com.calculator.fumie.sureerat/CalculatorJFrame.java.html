@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CalculatorJFrame.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">calculator-fumie-sureerat</a> &gt; <a href="index.source.html" class="el_package">com.calculator.fumie.sureerat</a> &gt; <span class="el_source">CalculatorJFrame.java</span></div><h1>CalculatorJFrame.java</h1><pre class="source lang-java linenums">package com.calculator.fumie.sureerat;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import javax.swing.UIManager;
+/**
+ * Here is a frame that holds the bottoms. 
+ * @author Sureerat and Fumie
+ *
+ */
+public class CalculatorJFrame {
+<span class="fc" id="L16">	 protected JFrame frame 		= new JFrame();</span>
+<span class="fc" id="L17">	 protected JTextField textField = new JTextField();</span>
+<span class="fc" id="L18">	 protected JButton buttDividion = new JButton(&quot;÷&quot;);</span>
+<span class="fc" id="L19">	 protected JButton buttPlus 	= new JButton(&quot;+&quot;);</span>
+<span class="fc" id="L20">	 protected JButton buttSub 		= new JButton(&quot;-&quot;);</span>
+<span class="fc" id="L21">	 protected JButton buttMulti 	= new JButton(&quot;x&quot;);</span>
+<span class="fc" id="L22">	 protected JButton buttPercent 	= new JButton(&quot;mod&quot;);</span>
+<span class="fc" id="L23">	 protected JButton buttResult 	= new JButton(&quot;=&quot;);</span>
+<span class="fc" id="L24">	 protected JButton buttPoint 	= new JButton(&quot;.&quot;);</span>
+<span class="fc" id="L25">	 protected JButton buttAC 		= new JButton(&quot;AC&quot;);</span>
+<span class="fc" id="L26">	 protected JButton buttSin 		= new JButton(&quot;sin&quot;);</span>
+<span class="fc" id="L27">	 protected JButton buttX3 		= new JButton(&quot;x3&quot;);</span>
+<span class="fc" id="L28">	 protected JButton buttX2 		= new JButton(&quot;x2&quot;);</span>
+<span class="fc" id="L29">	 protected JButton buttCos 		= new JButton(&quot;cos&quot;);</span>
+<span class="fc" id="L30">	 protected JButton buttTan 		= new JButton(&quot;tan&quot;);</span>
+<span class="fc" id="L31">	 protected JButton buttRoot 	= new JButton(&quot;√&quot;);</span>
+<span class="fc" id="L32">	 protected JButton butt0 		= new JButton(&quot;0&quot;);</span>
+<span class="fc" id="L33">	 protected JButton butt1 		= new JButton(&quot;1&quot;);</span>
+<span class="fc" id="L34">	 protected JButton butt2 		= new JButton(&quot;2&quot;);</span>
+<span class="fc" id="L35">	 protected JButton butt3 		= new JButton(&quot;3&quot;);</span>
+<span class="fc" id="L36">	 protected JButton butt4 		= new JButton(&quot;4&quot;);</span>
+<span class="fc" id="L37">	 protected JButton butt5 		= new JButton(&quot;5&quot;);</span>
+<span class="fc" id="L38">	 protected JButton butt6 		= new JButton(&quot;6&quot;);</span>
+<span class="fc" id="L39">	 protected JButton butt7 		= new JButton(&quot;7&quot;);</span>
+<span class="fc" id="L40">	 protected JButton butt8 		= new JButton(&quot;8&quot;);</span>
+<span class="fc" id="L41">	 protected JButton butt9 		= new JButton(&quot;9&quot;);</span>
+	  
+<span class="fc" id="L43">	 public CalculatorJFrame() {</span>
+<span class="fc" id="L44">	    butt0.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L45">	    butt0.setBounds(110, 414, 80, 49);</span>
+<span class="fc" id="L46">	    frame.getContentPane().add(butt0);</span>
+	    
+<span class="fc" id="L48">	    butt1.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L49">	    butt1.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L50">	    butt1.setBounds(110, 216, 80, 49);</span>
+<span class="fc" id="L51">	    frame.getContentPane().add(butt1);</span>
+	    
+<span class="fc" id="L53">	    butt2.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L54">	    butt2.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L55">	    butt2.setBounds(217, 216, 80, 49);</span>
+<span class="fc" id="L56">	    frame.getContentPane().add(butt2);</span>
+	    
+<span class="fc" id="L58">	    butt3.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L59">	    butt3.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L60">	    butt3.setBounds(323, 216, 80, 49);</span>
+<span class="fc" id="L61">	    frame.getContentPane().add(butt3);</span>
+	    
+<span class="fc" id="L63">	    butt4.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L64">	    butt4.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L65">	    butt4.setBounds(110, 280, 80, 49);</span>
+<span class="fc" id="L66">	    frame.getContentPane().add(butt4);</span>
+	    
+<span class="fc" id="L68">	    butt5.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L69">	    butt5.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L70">	    butt5.setBounds(217, 280, 80, 49);</span>
+<span class="fc" id="L71">	    frame.getContentPane().add(butt5);</span>
+	    
+<span class="fc" id="L73">	    butt6.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L74">	    butt6.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L75">	    butt6.setBounds(323, 281, 80, 49);</span>
+<span class="fc" id="L76">	    frame.getContentPane().add(butt6);</span>
+	    
+<span class="fc" id="L78">	    butt7.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L79">	    butt7.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L80">	    butt7.setBounds(110, 346, 80, 49);</span>
+<span class="fc" id="L81">	    frame.getContentPane().add(butt7);</span>
+	    
+<span class="fc" id="L83">	    butt8.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L84">	    butt8.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L85">	    butt8.setBounds(217, 346, 80, 49);</span>
+<span class="fc" id="L86">	    frame.getContentPane().add(butt8);</span>
+	    
+<span class="fc" id="L88">	    butt9.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L89">	    butt9.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L90">	    butt9.setBounds(323, 346, 80, 49);</span>
+<span class="fc" id="L91">	    frame.getContentPane().add(butt9);</span>
+	    
+
+<span class="fc" id="L94">	    buttX3.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L95">	    buttX3.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L96">	    buttX3.setBounds(15, 150, 80, 49);</span>
+<span class="fc" id="L97">	    frame.getContentPane().add(buttX3);</span>
+	    
+
+<span class="fc" id="L100">	    buttX2.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L101">	    buttX2.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L102">	    buttX2.setBounds(110, 150, 80, 49);</span>
+<span class="fc" id="L103">	    frame.getContentPane().add(buttX2);</span>
+	    
+
+<span class="fc" id="L106">	    buttSin.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L107">	    buttSin.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L108">	    buttSin.setBounds(15, 215, 80, 49);</span>
+<span class="fc" id="L109">	    frame.getContentPane().add(buttSin);</span>
+	    
+
+<span class="fc" id="L112">	    buttCos.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L113">	    buttCos.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L114">	    buttCos.setBounds(15, 280, 80, 49);</span>
+<span class="fc" id="L115">	    frame.getContentPane().add(buttCos);</span>
+	    
+
+<span class="fc" id="L118">	    buttTan.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L119">	    buttTan.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L120">	    buttTan.setBounds(15, 346, 80, 49);</span>
+<span class="fc" id="L121">	    frame.getContentPane().add(buttTan);</span>
+	    
+
+<span class="fc" id="L124">	    buttRoot.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L125">	    buttRoot.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L126">	    buttRoot.setBounds(217, 150, 80, 49);</span>
+<span class="fc" id="L127">	    frame.getContentPane().add(buttRoot);</span>
+	    
+
+<span class="fc" id="L130">	    buttPoint.setFont(new Font(&quot;Tahoma&quot;, 1, 25));</span>
+<span class="fc" id="L131">	    buttPoint.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L132">	    buttPoint.setBounds(217, 414, 80, 49);</span>
+<span class="fc" id="L133">	    frame.getContentPane().add(buttPoint);</span>
+	    
+
+<span class="fc" id="L136">	    buttResult.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L137">	    buttResult.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L138">	    buttResult.setBounds(428, 352, 80, 114);</span>
+<span class="fc" id="L139">	    frame.getContentPane().add(buttResult);</span>
+	    
+
+<span class="fc" id="L142">	    buttPercent.setFont(new Font(&quot;Tahoma&quot;, 1, 16));</span>
+<span class="fc" id="L143">	    buttPercent.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L144">	    buttPercent.setBounds(15, 414, 80, 49);</span>
+<span class="fc" id="L145">	    frame.getContentPane().add(buttPercent);</span>
+	    
+
+<span class="fc" id="L148">	    buttMulti.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L149">	    buttMulti.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L150">	    buttMulti.setBounds(428, 216, 80, 49);</span>
+<span class="fc" id="L151">	    frame.getContentPane().add(buttMulti);</span>
+	    
+
+<span class="fc" id="L154">	    buttSub.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L155">	    buttSub.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L156">	    buttSub.setBounds(428, 281, 80, 49);</span>
+<span class="fc" id="L157">	    frame.getContentPane().add(buttSub);</span>
+	    
+
+
+<span class="fc" id="L161">	    buttPlus.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L162">	    buttPlus.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L163">	    buttPlus.setBounds(323, 413, 80, 49);</span>
+<span class="fc" id="L164">	    frame.getContentPane().add(buttPlus);</span>
+	    
+
+<span class="fc" id="L167">	    buttDividion.setFont(new Font(&quot;Tahoma&quot;, 1, 18));</span>
+<span class="fc" id="L168">	    buttDividion.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L169">	    buttDividion.setBounds(428, 150, 80, 49);</span>
+<span class="fc" id="L170">	    frame.getContentPane().add(buttDividion);</span>
+	    
+
+<span class="fc" id="L173">	    buttAC.setFont(new Font(&quot;Tahoma&quot;, 1, 16));</span>
+<span class="fc" id="L174">	    buttAC.setBackground(UIManager.getColor(&quot;Button.shadow&quot;));</span>
+<span class="fc" id="L175">	    buttAC.setBounds(323, 151, 80, 49);</span>
+<span class="fc" id="L176">	    frame.getContentPane().add(buttAC);</span>
+	    
+
+<span class="fc" id="L179">	    textField.setFont(new Font(&quot;Dialog&quot;, 1, 50));</span>
+<span class="fc" id="L180">	    textField.setHorizontalAlignment(4);</span>
+<span class="fc" id="L181">	    textField.setBounds(15, 16, 493, 104);</span>
+<span class="fc" id="L182">	    frame.getContentPane().add(textField);</span>
+<span class="fc" id="L183">	    textField.setColumns(10);</span>
+	    
+<span class="fc" id="L185">	    textField.addKeyListener(new SimpleKeyListener());</span>
+	    
+
+<span class="fc" id="L188">	    frame.setResizable(false);</span>
+<span class="fc" id="L189">	    frame.getContentPane().setBackground(new Color(0, 255, 153));</span>
+<span class="fc" id="L190">	    frame.setBackground(new Color(255, 51, 255));</span>
+<span class="fc" id="L191">	    frame.setForeground(Color.DARK_GRAY);</span>
+<span class="fc" id="L192">	    frame.setTitle(&quot;Calculator_Fumie_Sureerat. Version 1.00&quot;);</span>
+<span class="fc" id="L193">	    frame.setBounds(100, 100, 534, 534);</span>
+<span class="fc" id="L194">	    frame.setDefaultCloseOperation(3);</span>
+<span class="fc" id="L195">	    frame.getContentPane().setLayout(null);</span>
+<span class="fc" id="L196">	    frame.setVisible(true);</span>
+	  
+<span class="fc" id="L198">	}</span>
+
+	public JTextField getTextField() {
+<span class="fc" id="L201">		return textField;</span>
+	}
+
+	public void setTextField(JTextField textField) {
+<span class="nc" id="L205">		this.textField = textField;</span>
+<span class="nc" id="L206">	}</span>
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

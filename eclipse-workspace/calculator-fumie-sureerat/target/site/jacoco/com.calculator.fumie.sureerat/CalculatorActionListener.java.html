@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CalculatorActionListener.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">calculator-fumie-sureerat</a> &gt; <a href="index.source.html" class="el_package">com.calculator.fumie.sureerat</a> &gt; <span class="el_source">CalculatorActionListener.java</span></div><h1>CalculatorActionListener.java</h1><pre class="source lang-java linenums">package com.calculator.fumie.sureerat;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+/**
+ * This class is extending CalculatorJFrame class
+ * and implementing ActionListener
+ * also implementing two interfaces, 
+ * culatorBasicOperationsInterface and CalculatorAdvancedOperationsInterface.
+ *
+ * @author Sureerat and Fumie
+ *
+ */
+
+public class CalculatorActionListener extends CalculatorJFrame
+implements ActionListener, CalculatorBasicOperationsInterface, CalculatorAdvancedOperationsInterface{
+
+	 private double firstNumber;
+	 private double secondNumber;
+	 private double result;
+	 private String enterNumber;
+	 private String operation;
+	 private String formatNum;
+	  
+<span class="fc" id="L25">	 public CalculatorActionListener() {</span>
+<span class="fc" id="L26">	    butt0.addActionListener(this);</span>
+<span class="fc" id="L27">	    butt1.addActionListener(this);</span>
+<span class="fc" id="L28">	    butt2.addActionListener(this);</span>
+<span class="fc" id="L29">	    butt3.addActionListener(this);</span>
+<span class="fc" id="L30">	    butt4.addActionListener(this);</span>
+<span class="fc" id="L31">	    butt5.addActionListener(this);</span>
+<span class="fc" id="L32">	    butt6.addActionListener(this);</span>
+<span class="fc" id="L33">	    butt7.addActionListener(this);</span>
+<span class="fc" id="L34">	    butt8.addActionListener(this);</span>
+<span class="fc" id="L35">	    butt9.addActionListener(this);</span>
+<span class="fc" id="L36">	    buttAC.addActionListener(this);</span>
+<span class="fc" id="L37">	    buttPlus.addActionListener(this);</span>
+<span class="fc" id="L38">	    buttSub.addActionListener(this);</span>
+<span class="fc" id="L39">	    buttMulti.addActionListener(this);</span>
+<span class="fc" id="L40">	    buttDividion.addActionListener(this);</span>
+<span class="fc" id="L41">	    buttPercent.addActionListener(this);</span>
+<span class="fc" id="L42">	    buttResult.addActionListener(this);</span>
+<span class="fc" id="L43">	    buttPoint.addActionListener(this);</span>
+<span class="fc" id="L44">	    buttSin.addActionListener(this);</span>
+<span class="fc" id="L45">	    buttCos.addActionListener(this);</span>
+<span class="fc" id="L46">	    buttTan.addActionListener(this);</span>
+<span class="fc" id="L47">	    buttRoot.addActionListener(this);</span>
+<span class="fc" id="L48">	    buttX2.addActionListener(this);</span>
+<span class="fc" id="L49">	    buttX3.addActionListener(this);</span>
+<span class="fc" id="L50">	  }</span>
+	 
+//Listener 
+	 public void actionPerformed(ActionEvent e) {
+	    
+<span class="nc bnc" id="L55" title="All 2 branches missed.">	      if (e.getSource() == butt0) {</span>
+<span class="nc" id="L56">	        enterNumber = (textField.getText() + butt0.getText());</span>
+<span class="nc" id="L57">	        textField.setText(enterNumber);</span>
+	      }
+<span class="nc bnc" id="L59" title="All 2 branches missed.">	      else if (e.getSource() == butt1) {</span>
+<span class="nc" id="L60">	        enterNumber = (textField.getText() + butt1.getText());</span>
+<span class="nc" id="L61">	        textField.setText(enterNumber);</span>
+<span class="nc bnc" id="L62" title="All 2 branches missed.">	      } else if (e.getSource() == butt2) {</span>
+<span class="nc" id="L63">	        enterNumber = (textField.getText() + butt2.getText());</span>
+<span class="nc" id="L64">	        textField.setText(enterNumber);</span>
+<span class="nc bnc" id="L65" title="All 2 branches missed.">	      } else if (e.getSource() == butt3) {</span>
+<span class="nc" id="L66">	        enterNumber = (textField.getText() + butt3.getText());</span>
+<span class="nc" id="L67">	        textField.setText(enterNumber);</span>
+<span class="nc bnc" id="L68" title="All 2 branches missed.">	      } else if (e.getSource() == butt4) {</span>
+<span class="nc" id="L69">	        enterNumber = (textField.getText() + butt4.getText());</span>
+<span class="nc" id="L70">	        textField.setText(enterNumber);</span>
+<span class="nc bnc" id="L71" title="All 2 branches missed.">	      } else if (e.getSource() == butt5) {</span>
+<span class="nc" id="L72">	        enterNumber = (textField.getText() + butt5.getText());</span>
+<span class="nc" id="L73">	        textField.setText(enterNumber);</span>
+<span class="nc bnc" id="L74" title="All 2 branches missed.">	      } else if (e.getSource() == butt6) {</span>
+<span class="nc" id="L75">	        enterNumber = (textField.getText() + butt6.getText());</span>
+<span class="nc" id="L76">	        textField.setText(enterNumber);</span>
+<span class="nc bnc" id="L77" title="All 2 branches missed.">	      } else if (e.getSource() == butt7) {</span>
+<span class="nc" id="L78">	        enterNumber = (textField.getText() + butt7.getText());</span>
+<span class="nc" id="L79">	        textField.setText(enterNumber);</span>
+<span class="nc bnc" id="L80" title="All 2 branches missed.">	      } else if (e.getSource() == butt8) {</span>
+<span class="nc" id="L81">	        enterNumber = (textField.getText() + butt8.getText());</span>
+<span class="nc" id="L82">	        textField.setText(enterNumber);</span>
+<span class="nc bnc" id="L83" title="All 2 branches missed.">	      } else if (e.getSource() == butt9) {</span>
+<span class="nc" id="L84">	        enterNumber = (textField.getText() + butt9.getText());</span>
+<span class="nc" id="L85">	        textField.setText(enterNumber);</span>
+<span class="nc bnc" id="L86" title="All 2 branches missed.">	      } else if (e.getSource() == buttAC) {</span>
+<span class="nc" id="L87">	        textField.setText(null);</span>
+<span class="nc bnc" id="L88" title="All 2 branches missed.">	      } else if (e.getSource() == buttPlus) {</span>
+<span class="nc" id="L89">	        addition();</span>
+<span class="nc bnc" id="L90" title="All 2 branches missed.">	      } else if (e.getSource() == buttSub) {</span>
+<span class="nc" id="L91">	        subtraction();</span>
+<span class="nc bnc" id="L92" title="All 2 branches missed.">	      } else if (e.getSource() == buttMulti) {</span>
+<span class="nc" id="L93">	        multiplication();</span>
+<span class="nc bnc" id="L94" title="All 2 branches missed.">	      } else if (e.getSource() == buttDividion) {</span>
+<span class="nc" id="L95">	        division();</span>
+<span class="nc bnc" id="L96" title="All 2 branches missed.">	      } else if (e.getSource() == buttPercent) {</span>
+<span class="nc" id="L97">	        mod();</span>
+<span class="nc bnc" id="L98" title="All 2 branches missed.">	      } else if (e.getSource() == buttResult) {</span>
+<span class="nc" id="L99">	        EqualTo();</span>
+<span class="nc bnc" id="L100" title="All 2 branches missed.">	      } else if (e.getSource() == buttPoint) {</span>
+<span class="nc" id="L101">	        enterNumber = (textField.getText() + buttPoint.getText());</span>
+<span class="nc" id="L102">	        textField.setText(enterNumber);</span>
+<span class="nc bnc" id="L103" title="All 2 branches missed.">	      } else if (e.getSource() == buttSin) {</span>
+<span class="nc" id="L104">	        sine();</span>
+<span class="nc bnc" id="L105" title="All 2 branches missed.">	      } else if (e.getSource() == buttCos) {</span>
+<span class="nc" id="L106">	        cosine();</span>
+<span class="nc bnc" id="L107" title="All 2 branches missed.">	      } else if (e.getSource() == buttTan) {</span>
+<span class="nc" id="L108">	        tangent();</span>
+<span class="nc bnc" id="L109" title="All 2 branches missed.">	      } else if (e.getSource() == buttRoot) {</span>
+<span class="nc" id="L110">	        sqrt();</span>
+<span class="nc bnc" id="L111" title="All 2 branches missed.">	      } else if (e.getSource() == buttX2) {</span>
+<span class="nc" id="L112">	        x2();</span>
+<span class="nc bnc" id="L113" title="All 2 branches missed.">	      } else if (e.getSource() == buttX3) {</span>
+<span class="nc" id="L114">	        x3();</span>
+	      }
+	   
+<span class="nc" id="L117">	  }</span>
+	  
+
+	  public void addition() {
+		//convert number from textField to be the double argument  
+<span class="nc" id="L122">	    firstNumber = Double.parseDouble(textField.getText());</span>
+	    
+	    //The text will disappear after clicking the plus button.
+<span class="nc" id="L125">	    textField.setText(&quot;&quot;);</span>
+<span class="nc" id="L126">	    operation = &quot;+&quot;;</span>
+<span class="nc" id="L127">	  }</span>
+	  
+
+	  public void subtraction() {
+<span class="nc" id="L131">	    firstNumber = Double.parseDouble(textField.getText());</span>
+<span class="nc" id="L132">	    textField.setText(&quot;&quot;);</span>
+<span class="nc" id="L133">	    operation = &quot;-&quot;;</span>
+<span class="nc" id="L134">	  }</span>
+	  
+
+	  public void multiplication() {
+<span class="nc" id="L138">	    firstNumber = Double.parseDouble(textField.getText());</span>
+<span class="nc" id="L139">	    textField.setText(&quot;&quot;);</span>
+<span class="nc" id="L140">	    operation = &quot;x&quot;;</span>
+<span class="nc" id="L141">	  }</span>
+	  
+
+
+	public void division() {
+<span class="nc" id="L146">	    firstNumber = Double.parseDouble(textField.getText());</span>
+<span class="nc" id="L147">	    textField.setText(&quot;&quot;);</span>
+<span class="nc" id="L148">	    operation = &quot;÷&quot;;</span>
+<span class="nc" id="L149">	  }</span>
+	  
+
+
+	public void mod() {
+<span class="nc" id="L154">	    firstNumber = Double.parseDouble(textField.getText());</span>
+<span class="nc" id="L155">	    textField.setText(&quot;&quot;);</span>
+<span class="nc" id="L156">	    operation = &quot;mod&quot;;</span>
+<span class="nc" id="L157">	  }</span>
+	  
+	//For sine, cosine, tangent, sqrt, x2 and x3 methods 
+	//The user will see the answer directly after pressing these buttons.
+	public void sine() {
+<span class="fc" id="L162">	    firstNumber = Double.parseDouble(String.valueOf(textField.getText()));</span>
+<span class="fc" id="L163">	    result = Math.sin(firstNumber);</span>
+	    
+	    //Decimal numbers are limited to ten digits only. 
+<span class="fc" id="L166">	    formatNum = String.format(&quot;%.10f&quot;, new Object[] { Double.valueOf(result) });</span>
+<span class="fc" id="L167">	    textField.setText(String.valueOf(formatNum));</span>
+<span class="fc" id="L168">	  }</span>
+	  
+
+	public void cosine() {
+<span class="fc" id="L172">	    firstNumber = Double.parseDouble(String.valueOf(textField.getText()));</span>
+<span class="fc" id="L173">	    result = Math.cos(firstNumber);</span>
+<span class="fc" id="L174">	    formatNum = String.format(&quot;%.10f&quot;, new Object[] { Double.valueOf(result) });</span>
+<span class="fc" id="L175">	    textField.setText(String.valueOf(formatNum));</span>
+<span class="fc" id="L176">	  }</span>
+	  
+
+	  public void tangent() {
+<span class="fc" id="L180">	    firstNumber = Double.parseDouble(String.valueOf(textField.getText()));</span>
+<span class="fc" id="L181">	    result = Math.tan(firstNumber);</span>
+<span class="fc" id="L182">	    formatNum = String.format(&quot;%.10f&quot;, new Object[] { Double.valueOf(result) });</span>
+<span class="fc" id="L183">	    textField.setText(String.valueOf(formatNum));</span>
+<span class="fc" id="L184">	  }</span>
+	  
+
+	  public void sqrt() {
+<span class="fc" id="L188">	    firstNumber = Double.parseDouble(String.valueOf(textField.getText()));</span>
+<span class="fc" id="L189">	    result = Math.sqrt(firstNumber);</span>
+<span class="fc" id="L190">	    formatNum = String.format(&quot;%.10f&quot;, new Object[] { Double.valueOf(result) });</span>
+<span class="fc" id="L191">	    textField.setText(String.valueOf(formatNum));</span>
+<span class="fc" id="L192">	  }</span>
+	  
+
+	  public void x2() {
+<span class="fc" id="L196">	    firstNumber = Double.parseDouble(String.valueOf(textField.getText()));</span>
+<span class="fc" id="L197">	    result = (firstNumber * firstNumber);</span>
+<span class="fc" id="L198">	    formatNum = String.format(&quot;%.2f&quot;, new Object[] { Double.valueOf(result) });</span>
+<span class="fc" id="L199">	    textField.setText(String.valueOf(formatNum));</span>
+	   
+<span class="fc" id="L201">	  }</span>
+	  
+
+	  public void x3() {
+<span class="fc" id="L205">	    firstNumber = Double.parseDouble(String.valueOf(textField.getText()));</span>
+<span class="fc" id="L206">	    result = (firstNumber * firstNumber * firstNumber);</span>
+<span class="fc" id="L207">	    formatNum = String.format(&quot;%.2f&quot;, new Object[] { Double.valueOf(result) });</span>
+<span class="fc" id="L208">	    textField.setText(String.valueOf(formatNum));</span>
+<span class="fc" id="L209">	  }</span>
+
+	  //The code is for when the user presses the equals button,
+	  //the answer is displayed in textField. 
+	  public void EqualTo() {
+<span class="fc" id="L214">	    secondNumber = Double.parseDouble(textField.getText());</span>
+	    
+<span class="fc bfc" id="L216" title="All 2 branches covered.">	    if (operation == &quot;+&quot;) {</span>
+<span class="fc" id="L217">	      result = (firstNumber + secondNumber);</span>
+<span class="fc" id="L218">	      formatNum = String.format(&quot;%.2f&quot;, new Object[] { Double.valueOf(result) });</span>
+<span class="fc" id="L219">	      textField.setText(formatNum);</span>
+	    }
+<span class="fc bfc" id="L221" title="All 2 branches covered.">	    else if (operation == &quot;-&quot;) {</span>
+<span class="fc" id="L222">	      result = (firstNumber - secondNumber);</span>
+<span class="fc" id="L223">	      formatNum = String.format(&quot;%.2f&quot;, new Object[] { Double.valueOf(result) });</span>
+<span class="fc" id="L224">	      textField.setText(formatNum);</span>
+<span class="fc bfc" id="L225" title="All 2 branches covered.">	    } else if (operation == &quot;x&quot;) {</span>
+<span class="fc" id="L226">	      result = (firstNumber * secondNumber);</span>
+<span class="fc" id="L227">	      formatNum = String.format(&quot;%.2f&quot;, new Object[] { Double.valueOf(result) });</span>
+<span class="fc" id="L228">	      textField.setText(formatNum);</span>
+<span class="fc bfc" id="L229" title="All 2 branches covered.">	    } else if (operation == &quot;÷&quot;) {</span>
+<span class="fc" id="L230">	      result = (firstNumber / secondNumber);</span>
+<span class="fc" id="L231">	      formatNum = String.format(&quot;%.2f&quot;, new Object[] { Double.valueOf(result) });</span>
+<span class="fc" id="L232">	      textField.setText(formatNum);</span>
+<span class="pc bpc" id="L233" title="1 of 2 branches missed.">	    } else if (operation == &quot;mod&quot;) {</span>
+<span class="fc" id="L234">	      result = (firstNumber % secondNumber);</span>
+<span class="fc" id="L235">	      formatNum = String.format(&quot;%.2f&quot;, new Object[] { Double.valueOf(result) });</span>
+<span class="fc" id="L236">	      textField.setText(formatNum);</span>
+	    }
+<span class="fc" id="L238">	  }</span>
+
+	 /**
+	  * All these getters and setters use for the Unit test
+	  * @param firstNumber
+	  */
+	  public void setFirstNumber(double firstNumber) {
+<span class="fc" id="L245">		  this.firstNumber = firstNumber;</span>
+<span class="fc" id="L246">	  }</span>
+	  
+	  /**
+	   * 
+	   * @param secondNumber
+	   */
+	  public void setSecondNumber(double secondNumber) {
+<span class="nc" id="L253">		  this.secondNumber = secondNumber;</span>
+<span class="nc" id="L254">	  }</span>
+	  
+	  /**
+	   * 
+	   * @param operation
+	   */
+	  public void setOperation(String operation) {
+<span class="fc" id="L261">		  this.operation = operation;</span>
+<span class="fc" id="L262">	  }</span>
+	  
+	  /**
+	   * 
+	   * @return formatNum;
+	   */
+	  public String getFormatNum() {
+<span class="fc" id="L269">		return formatNum;</span>
+	}
+	  
+	  /**
+	   * 
+	   * @return result;
+	   */
+	  public double getResult() {
+<span class="nc" id="L277">		return result;</span>
+	}
+	  
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>
